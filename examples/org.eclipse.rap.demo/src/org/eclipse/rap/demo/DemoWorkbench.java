@@ -37,7 +37,7 @@ public class DemoWorkbench implements EntryPoint {
 
     Display display = PlatformUI.createDisplay();
     int result = PlatformUI.createAndRunWorkbench( display, worbenchAdvisor );
-    display.dispose();
+//    display.dispose();
     return result;
   }
 }

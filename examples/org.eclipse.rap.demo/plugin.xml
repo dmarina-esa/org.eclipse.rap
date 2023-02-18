@@ -157,45 +157,6 @@
 
    <extension
          point="org.eclipse.ui.actionSets">
-      <actionSet
-            id="org.eclipse.rap.demo.actionSet"
-            label="Sample Action Set"
-            visible="false">
-         <menu
-               id="sampleMenu"
-               label="Sample &amp;Menu">
-            <separator
-                  name="sampleGroup">
-            </separator>
-         </menu>
-         <action
-               class="org.eclipse.rap.demo.actions.SampleAction"
-               icon="icons/sample.gif"
-               id="org.eclipse.rap.demo.actions.SampleAction"
-               label="&amp;Sample Action"
-               menubarPath="sampleMenu/sampleGroup"
-               toolbarPath="sampleGroup"
-               tooltip="Hello, Eclipse world">
-         </action>
-         <action
-               class="org.eclipse.rap.demo.actions.JobAction"
-               icon="icons/pview.gif"
-               id="org.eclipse.rap.demo.actions.JobAction"
-               label="&amp;Start Job"
-               menubarPath="sampleMenu/sampleGroup"
-               toolbarPath="sampleGroup"
-               tooltip="Start Job">
-         </action>
-         <action
-               class="org.eclipse.rap.demo.actions.JobActionWithDialog"
-               icon="icons/progress_ok.gif"
-               id="org.eclipse.rap.demo.actions.JobActionWithDialog"
-               label="&amp;Start Job with Dialog"
-               menubarPath="sampleMenu/sampleGroup"
-               toolbarPath="sampleGroup"
-               tooltip="Start Job with Dialog">
-         </action>
-      </actionSet>
    </extension>
 
    <extension
@@ -236,14 +197,6 @@
      </decorator>
    </extension>
 
-   <extension
-         point="org.eclipse.ui.presentationFactories">
-      <factory
-            class="org.eclipse.rap.demo.presentation.PresentationFactory"
-            id="org.eclipse.rap.demo.presentation"
-            name="demoPresentation">
-      </factory>
-   </extension>
 
    <extension
          point="org.eclipse.ui.exportWizards">
